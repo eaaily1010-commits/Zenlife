@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light" name="color-scheme"/>
+<title>正念星图 × 身心修习生活平台 · 商业化方案（完整版）</title>
+<style>
+:root{
+  --black:#000000;--white:#ffffff;--gray-1:#7f7f7f;--gray-2:#d1d1d1;--gray-3:#e6e6e6;--gray-4:#f2f2f2;
+  --purple:#6B46C1;--purple-2:#9F7AEA;--purple-3:#E9D8FD;--gold:#D69E2E;--gold-2:#ECC94B;--gold-3:#FEFCBF;
+  --grad:linear-gradient(135deg,#6B46C1 0%,#D69E2E 100%);--grad-light:linear-gradient(135deg,#E9D8FD 0%,#FEFCBF 100%);
+  --max:1280px;--gutter:60px;--shadow:0 12px 40px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--black);background:var(--white);font-family:"Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",Arial,sans-serif;font-size:20px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4{margin:0;font-family:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","SimSun",serif;letter-spacing:-.035em}
+h1{font-size:60px;line-height:1.22;font-weight:700}
+h2{font-size:40px;line-height:1.4;font-weight:700}
+h3{font-size:25px;line-height:1.5;font-weight:700}
+h4{font-size:20px;line-height:1.5;font-weight:700}
+p{margin:0}.container{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.small{font-size:15px;line-height:1.5}.body2{font-size:25px;line-height:1.5}.muted{color:var(--gray-1)}.serif{font-family:"Noto Serif CJK SC","Source Han Serif SC",serif}.num{font-family:"Noto Serif CJK SC",serif;font-weight:700;letter-spacing:-.06em}.purple{color:var(--purple)}.gold{color:var(--gold)}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--gray-3)}
+.nav-inner{max-width:var(--max);height:80px;margin:0 auto;padding:0 var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:30px}
+.brand{display:flex;align-items:center;gap:15px;white-space:nowrap}.brand-mark{width:40px;height:40px;background:#000;color:#fff;display:grid;place-items:center;font-family:Georgia,serif;font-size:15px;font-weight:700}.brand-copy{font-size:15px;line-height:1.35;letter-spacing:.12em;text-transform:uppercase}
+.nav-links{display:flex;gap:20px;flex-wrap:wrap;justify-content:flex-end}.nav-links a{text-decoration:none;font-size:15px}.nav-links a:hover{color:var(--purple)}
+.progress{position:fixed;left:0;top:0;height:3px;width:0;background:var(--grad);z-index:60}
+.hero{padding:90px 0 75px;border-bottom:1px solid var(--gray-3)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) 390px;gap:60px;align-items:end}
+.eyebrow{font-size:15px;line-height:1.5;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-1);font-weight:500;margin-bottom:20px}
+.hero h1{max-width:860px}.hero-lead{max-width:820px;margin-top:30px;font-size:25px;line-height:1.5;color:#222}
+.thesis{margin-top:40px;border-left:5px solid var(--purple);padding-left:25px;max-width:850px;font-size:25px;line-height:1.5}
+.hero-panel{background:#000;color:#fff;min-height:470px;padding:40px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow)}
+.hero-panel h3{color:#fff}.hero-stat{font-size:70px;line-height:1.1;color:#fff}.hero-stat-sub{margin-top:10px;color:#d1d1d1;font-size:15px}.panel-lines{display:grid;gap:15px}.panel-line{padding-top:15px;border-top:1px solid #555}.panel-line b{font-size:20px;display:block}.panel-line span{display:block;margin-top:5px;color:#d1d1d1;font-size:15px;line-height:1.5}
+.section{padding:80px 0;border-bottom:1px solid var(--gray-3)}.section.light{background:#fafafa}.section.black{background:#000;color:#fff}.section.black h2,.section.black h3,.section.black h4{color:#fff}.section.black .muted{color:#d1d1d1}.section.tight{padding:60px 0}
+.section-head{display:grid;grid-template-columns:300px minmax(0,1fr);gap:60px;align-items:start;margin-bottom:45px}.section-index{border-top:2px solid #000;padding-top:15px;color:var(--gray-1);font-size:20px}.section.black .section-index{border-color:#fff;color:#d1d1d1}.section-intro{margin-top:20px;max-width:850px;font-size:25px;line-height:1.5;color:#333}.section.black .section-intro{color:#d1d1d1}
+.grid{display:grid;gap:30px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{background:var(--gray-4);padding:30px;border:1px solid transparent;min-width:0}.card.white{background:#fff;border-color:var(--gray-3)}.card.black{background:#000;color:#fff}.card.black h3,.card.black h4{color:#fff}.card.light{background:var(--grad-light)}.card.grad{background:var(--grad);color:#fff}.card.grad h3,.card.grad h4{color:#fff}
+.kpi{min-height:220px;display:flex;flex-direction:column;justify-content:space-between}.kpi .n{font-size:55px;line-height:1.15}.kpi .label{font-size:15px;color:var(--gray-1);margin-top:5px}.kpi.black .label,.kpi.grad .label{color:#d1d1d1}.kpi .note{font-size:15px;line-height:1.5;color:#333}.kpi.black .note,.kpi.grad .note{color:#eee}
+.story{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--gray-3)}.story-item{min-height:260px;padding:30px;border-right:1px solid var(--gray-3);position:relative}.story-item:last-child{border-right:0}.story-no{position:absolute;top:10px;right:20px;font-size:55px;color:#ececec}.story-item h3,.story-item p{position:relative;z-index:1}.story-item h3{margin-bottom:20px}.story-item p{font-size:15px;color:#333}.story-item.em{background:#000;color:#fff}.story-item.em h3,.story-item.em p{color:#fff}.story-item.em .story-no{color:#333}
+.chart-card{background:var(--gray-4);padding:30px;border:1px solid var(--gray-3)}.chart-title{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:25px}.chart-title p{font-size:15px;color:var(--gray-1);max-width:560px;text-align:right}.chart-source{margin-top:20px;padding-top:15px;border-top:1px solid var(--gray-2);font-size:15px;color:var(--gray-1)}
+.linechart{width:100%;height:auto;display:block}.axis-label{font-family:"Noto Sans CJK SC",sans-serif;font-size:14px;fill:#666}.data-label{font-family:"Noto Serif CJK SC",serif;font-size:16px;font-weight:700;fill:#000}.grid-line{stroke:#d1d1d1;stroke-width:1}.trend-line{fill:none;stroke:url(#gradLine);stroke-width:5}.trend-dot{fill:#000;stroke:#fff;stroke-width:3}
+.bar-list{display:grid;gap:14px}.bar-row{display:grid;grid-template-columns:190px minmax(0,1fr) 80px;gap:20px;align-items:center}.bar-label{font-size:15px}.bar-track{height:18px;background:#e3e3e3;overflow:hidden}.bar-fill{height:100%;background:linear-gradient(90deg,#8c8c8c,#000)}.bar-fill.purplebar{background:linear-gradient(90deg,#b7b7b7,var(--purple))}.bar-fill.goldbar{background:linear-gradient(90deg,#b7b7b7,var(--gold))}.bar-val{text-align:right;font-size:15px;font-weight:700}
+.matrix-wrap{overflow-x:auto;border:1px solid var(--gray-3);background:#fff}.matrix{border-collapse:collapse;width:100%;min-width:980px;font-size:15px;line-height:1.5}.matrix th{font-family:"Noto Serif CJK SC",serif;background:var(--gray-4);padding:15px;text-align:left;border-bottom:2px solid #000;position:sticky;top:0}.matrix td{padding:15px;border-bottom:1px solid var(--gray-3);vertical-align:top}.persona{background:#fff;border:1px solid var(--gray-3);padding:30px;min-height:300px}.persona h3{margin-bottom:15px}.persona .meta{font-size:15px;color:var(--gray-1);padding-bottom:15px;border-bottom:1px solid var(--gray-3);margin-bottom:15px}.persona ul{margin:0;padding-left:20px;font-size:15px;line-height:1.55}.persona li{margin-bottom:8px}
+.playbook{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}.play{border:1px solid var(--gray-3);background:#fff;padding:25px;min-height:310px;position:relative}.play-no{font-size:15px;color:var(--gray-1);border-bottom:1px solid var(--gray-3);padding-bottom:10px;margin-bottom:15px}.play h3{font-size:25px}.play p{font-size:15px;color:#333;margin-top:15px}.play.em{background:#000;color:#fff}.play.em h3,.play.em p{color:#fff}
+.method{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.method-card{background:#111;border:1px solid #444;padding:25px;min-height:230px}.method-card h3{color:#fff;margin-bottom:15px}.method-card p{font-size:15px;color:#d1d1d1}
+.sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 30px}.source{font-size:15px;padding:15px 0;border-bottom:1px solid var(--gray-3)}.source b{display:block}.source span{color:var(--gray-1)}
+.footer{background:#000;color:#fff;padding:60px 0}.footer h2{color:#fff}.footer p{margin-top:20px;color:#d1d1d1;max-width:900px}.footer-meta{margin-top:30px;padding-top:20px;border-top:1px solid #333;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;font-size:15px;color:#d1d1d1}
+.pl-module{--ink:#050505;--muted:#6f767c;--line:#d9e4e9;--paper:#ffffff;--purple-pale:#f3e8ff;--purple:#6B46C1;--gold:#D69E2E;--grey:#f3f5f6;--max:1240px;--serif:"Noto Serif SC",serif;--sans:"Noto Sans SC",sans-serif;}
+.pl-module *{box-sizing:border-box}.pl-module{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased;}
+.pl-hero{background:var(--purple-pale);min-height:690px;display:flex;align-items:center;border-bottom:1px solid #e9d8fd;}
+.pl-hero-inner{max-width:var(--max);margin:auto;width:100%;padding:92px 28px 70px;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:end;}
+.pl-eyebrow{font-size:14px;letter-spacing:.22em;color:#6e777d;text-transform:uppercase;margin-bottom:22px;}
+.pl-module h1,.pl-module h2,.pl-module h3{font-family:var(--serif);font-weight:500;margin:0}
+.pl-module h1{font-size:clamp(44px,6vw,86px);line-height:1.08;letter-spacing:-.035em}
+.pl-hero-sub{font-size:22px;max-width:760px;margin:34px 0 0;line-height:1.55;}
+.pl-hero-meta{border-top:1px solid rgba(0,0,0,.14);margin-top:46px;padding-top:24px;display:flex;gap:36px;flex-wrap:wrap;font-size:15px;}
+.pl-hero-card{background:#fff;padding:34px 34px 28px;min-height:430px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 22px 70px rgba(107,70,193,.08);}
+.pl-hero-card .pl-label{font-size:13px;letter-spacing:.18em;color:#747c82}
+.pl-hero-card h3{font-size:31px;line-height:1.3;margin-top:16px}
+.pl-big-money{font-family:Georgia,serif;font-size:58px;line-height:1;margin:28px 0 22px;letter-spacing:-.04em;}
+.pl-split-row{border-top:1px solid var(--line);margin-top:26px;padding-top:20px;display:flex;justify-content:space-between;font-size:15px;}
+.pl-section{max-width:var(--max);margin:auto;padding:100px 28px}
+.pl-section.alt{max-width:none;background:var(--grey)}.pl-section.alt > .pl-inner{max-width:var(--max);margin:auto}
+.pl-section.dark{max-width:none;background:#060606;color:#fff}.pl-section.dark > .pl-inner{max-width:var(--max);margin:auto}
+.pl-section-head{display:grid;grid-template-columns:180px 1fr;gap:34px;margin-bottom:54px;align-items:start;}
+.pl-section-index{font-size:13px;letter-spacing:.18em;color:#798187;padding-top:10px}
+.pl-section-title h2{font-size:clamp(34px,4vw,56px);line-height:1.18;letter-spacing:-.025em}
+.pl-section-title p{font-size:18px;color:#586067;max-width:850px;margin:18px 0 0}
+.pl-kpis{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);}
+.pl-kpi{padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:160px}
+.pl-kpi .pl-num{font-family:Georgia,serif;font-size:44px;line-height:1.05}
+.pl-kpi .pl-cap{font-size:14px;color:#687078;margin-top:16px}
+.pl-simulator{display:grid;grid-template-columns:1fr 1.15fr;gap:36px;background:#fff;border:1px solid var(--line);padding:34px;}
+.pl-sim-copy h3{font-size:30px}.pl-sim-copy p{color:#646c72}
+.pl-assumption-note{font-size:12px;color:#6b7379;border-top:1px solid var(--line);padding-top:16px;margin-top:26px}
+.pl-input-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pl-field{border:1px solid var(--line);padding:14px 15px;background:#fafcfd}
+.pl-field label{display:block;font-size:12px;color:#6d747a;margin-bottom:7px}
+.pl-field input{width:100%;border:0;background:transparent;font-size:25px;font-family:Georgia,serif;outline:none}
+.pl-sim-output{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.pl-sim-output div{background:var(--purple-pale);padding:15px}
+.pl-sim-output span{display:block;font-size:12px;color:#677078}
+.pl-sim-output b{font-size:23px;font-family:Georgia,serif}
+.pl-ladder{position:relative;display:grid;grid-template-columns:.72fr 1fr 1.25fr;gap:18px;align-items:end;margin-top:14px;}
+.pl-step{border:1px solid var(--line);background:#fff;padding:28px;position:relative;display:flex;flex-direction:column;justify-content:space-between;}
+.pl-step.s0{min-height:260px}.pl-step.s1{min-height:390px;background:var(--purple-pale)}.pl-step.s2{min-height:530px;background:#fff}
+.pl-step .pl-tag{font-size:12px;letter-spacing:.16em;color:#71797f}
+.pl-step h3{font-size:29px;margin:14px 0 12px}.pl-step .pl-money{font-family:Georgia,serif;font-size:48px;line-height:1.05}
+.pl-step .pl-ratio{font-size:14px;color:#697177;margin-top:8px}.pl-step ul{margin:24px 0 0;padding-left:18px;color:#30363a}.pl-step li{margin:8px 0}
+.pl-gate{border-top:1px solid var(--line);margin-top:28px;padding-top:17px;font-size:13px;color:#555e64}
+.pl-barline{position:absolute;left:8%;right:8%;bottom:-34px;height:2px;background:linear-gradient(90deg,var(--purple),var(--gold));}
+.pl-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pl-why{background:#fff;border:1px solid var(--line);padding:28px;min-height:250px}
+.pl-why .pl-n{font-family:Georgia,serif;font-size:38px;color:var(--purple)}
+.pl-why h3{font-family:var(--sans);font-size:20px;font-weight:600;margin:14px 0}.pl-why p{margin:0;color:#596168}
+.pl-finance-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.pl-finance-card{border:1px solid var(--line);padding:30px;background:#fff}
+.pl-finance-card h3{font-size:28px;margin-bottom:24px}
+.pl-legend{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;font-size:13px}
+.pl-legend div{display:flex;justify-content:space-between;border-bottom:1px solid #edf0f2;padding-bottom:7px}
+.pl-revenue-bridge{margin-top:22px}
+.pl-bridge-row{display:grid;grid-template-columns:125px 1fr 86px;gap:12px;align-items:center;margin:13px 0}
+.pl-bridge-track{height:14px;background:#edf2f4}
+.pl-bridge-fill{height:100%;background:linear-gradient(90deg,var(--purple),var(--gold))}
+.pl-bridge-row b{text-align:right;font-family:Georgia,serif;font-size:18px}
+.pl-quarters{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pl-quarter{border-top:5px solid var(--ink);background:#fff;padding:24px;min-height:320px}
+.pl-quarter:nth-child(2){border-color:#5d6e75}.pl-quarter:nth-child(3){border-color:var(--purple)}.pl-quarter:nth-child(4){border-color:var(--gold)}
+.pl-quarter .pl-q{font-family:Georgia,serif;font-size:32px}.pl-quarter h3{font-family:var(--sans);font-size:19px;font-weight:600;margin:16px 0 12px}.pl-quarter p{font-size:14px;color:#5f676d}
+.pl-quarter .pl-metric{border-top:1px solid var(--line);margin-top:18px;padding-top:15px;font-size:13px}.pl-metric b{font-size:20px;font-family:Georgia,serif}
+.pl-risk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.pl-risk{border-top:1px solid var(--line);padding:22px 0;display:grid;grid-template-columns:46px 1fr;gap:16px}
+.pl-risk .pl-r{font-family:Georgia,serif;font-size:30px;color:#879198}
+.pl-risk h3{font-family:var(--sans);font-size:18px;font-weight:600}.pl-risk p{margin:7px 0 0;color:#5f676d;font-size:14px}
+.pl-decision{background:var(--purple-pale);padding:50px;display:grid;grid-template-columns:1fr .8fr;gap:42px}
+.pl-decision h2{font-size:48px;line-height:1.2}.pl-decision p{font-size:18px}
+.pl-decision-box{background:#fff;padding:28px}
+.pl-decision-box div{padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}.pl-decision-box div:last-child{border-bottom:0}
+.pl-module footer{max-width:var(--max);margin:auto;padding:42px 28px 60px;color:#727a80;font-size:12px;border-top:1px solid var(--line)}
+.pl-pill{display:inline-block;padding:5px 9px;border:1px solid currentColor;font-size:11px;letter-spacing:.08em}
+.pl-module{width:100%;--max:1240px;}
+.pl-module::before{content:"PART II / COMMERCIALIZATION PLAN";display:block;max-width:1280px;margin:0 auto;padding:54px 60px 24px;font-family:"Noto Sans CJK SC","Source Han Sans SC",sans-serif;font-size:14px;font-weight:700;letter-spacing:.18em;color:#7f7f7f;border-top:1px solid #e6e6e6;}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<nav class="nav">
+<div class="nav-inner">
+<div class="brand"><div class="brand-mark">正念</div><div class="brand-copy">正念星图 · 身心修习生活平台<br/><span class="muted">商业化方案 (完整版)</span></div></div>
+<div class="nav-links"><a href="#summary">结论</a><a href="#market">市场</a><a href="#competition">竞品</a><a href="#demand">需求</a><a href="#opportunity">机会</a><a href="#action">行动</a><a href="#commercial-plan">商业规划</a><a href="#method">方法</a></div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow">正念六维觉察体系 + 占星觉察 + 疗愈师矩阵 + 线上虚拟产品 + 旅修延伸 · 2026年7月</div>
+<h1>高净值人群身心修习：不是“玄学鸡汤”，而是<span class="purple">深度内在觉察</span>与<span class="gold">确定性重置</span></h1>
+<p class="hero-lead">同质化普通身心灵课程已无机会。高净值人群聚焦于“高功能孤独、内在焦虑、意义缺失”核心痛点，需要高质感、高私密性、具备专属科学体系的身心修习生活平台。</p>
+<div class="thesis">核心逻辑：以双主理人独家内容资产（正念六维+占星觉察）为切入点，搭建“线下沙龙 + 线上虚拟课程 + 高端旅修 Retreat + 健康产品植入”四位一体的轻资产商业闭环。</div>
+</div>
+<aside class="hero-panel">
+<div>
+<div class="small muted">2026E 中国泛心理与大健康市场规模</div>
+<div class="hero-stat num">千亿级</div>
+<div class="hero-stat-sub">高净值人群健康消费连续 4 年增长</div>
+</div>
+<div class="panel-lines">
+<div class="panel-line"><b class="num">156万-358万</b><span>首年预估总营收区间（人民币）</span></div>
+<div class="panel-line"><b class="num">NPS ≥ 40</b><span>Phase 1 验证期关键过关门槛</span></div>
+<div class="panel-line"><b class="num">100% 客户权属</b><span>平台强掌控与分销防飞单机制</span></div>
+<div class="panel-line"><b class="num">2.7 万亿</b><span>2028E 中国高端银发/康养旅修大盘</span></div>
+</div>
+</aside>
+</div>
+</header>
+
+<section class="section" id="summary">
+<div class="container">
+<div class="section-head">
+<div class="section-index">00 / Executive storyline</div>
+<div><h2>五个核心洞察共同指向：摒弃通用疗愈，建立体系化高端修习平台</h2><p class="section-intro">市场、客群、消费心态与交付逻辑清晰锁定：高净值人群不再为“外显炫耀”买单，而愿意为“真实体验”和“内在笃定”支付溢价。</p></div>
+</div>
+<div class="story">
+<div class="story-item"><div class="story-no num">01</div><h3>普通课程无机会</h3><p>通用冥想与话术无法解决深层精神焦虑，体系化与个性化修习平台具备结构性红利。</p></div>
+<div class="story-item"><div class="story-no num">02</div><h3>精神消费新刚需</h3><p>消费从炫耀型转向体验型，社交从功利拓展转向同频深度陪伴。</p></div>
+<div class="story-item"><div class="story-no num">03</div><h3>双赛道叠加红利</h3><p>正念身心修习 + 高端品质旅修叠加，精准承接终身学习与身心重置需求。</p></div>
+<div class="story-item"><div class="story-no num">04</div><h3>高功能孤独痛点</h3><p>存在性焦虑、情绪失语、假性社交孤独、身份意义缺失构成核心人群画像。</p></div>
+<div class="story-item em"><div class="story-no num">05</div><h3>轻资产高毛利</h3><p>自研核心内容 + 外部场方/疗愈师合作矩阵，建立低成本多城复制能力。</p></div>
+</div>
+</div>
+</section>
+
+<section class="section tight light">
+<div class="container grid g4">
+<div class="card grad kpi"><div><div class="n num">¥1,699</div><div class="label">王牌融合沙龙最高客单</div></div><div class="note">双主理人深度对谈，市场独有产品形态。</div></div>
+<div class="card black kpi"><div><div class="n num">¥12,800</div><div class="label">高端深度旅修最高客单</div></div><div class="note">高客单、高毛利、品牌天花板产品。</div></div>
+<div class="card white kpi"><div><div class="n num">9.9元</div><div class="label">公域音频体验课引流</div></div><div class="note">极低门槛打破信任壁垒，私域高效转化。</div></div>
+<div class="card white kpi"><div><div class="n num">899元</div><div class="label">线上系统课主力定价</div></div><div class="note">核心线上利润品，无思考快速决策带。</div></div>
+</div>
+</section>
+
+<section class="section break" id="market">
+<div class="container">
+<div class="section-head">
+<div class="section-index">01 / Market Size &amp; Trends</div>
+<div><h2>宏观趋势：大健康与泛心理千亿大盘，高端旅修 2028 年将达 2.7 万亿</h2><p class="section-intro">经济不确定性下，高净值人群宽裕度体感下降，现金流安全与内在确定性诉求爆发，健康稳居消费诉求 TOP1。</p></div>
+</div>
+<div class="chart-card">
+<div class="chart-title"><h3>中国身心大健康与银发康养旅修市场规模预估</h3><p>单位：万亿元人民币；基于胡润报告与行业公开发布数据估算。</p></div>
+<svg aria-label="大健康与旅修市场规模增长" class="linechart" role="img" viewbox="0 0 1120 430">
+<defs><lineargradient id="gradLine" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#6B46C1"></stop><stop offset="1" stop-color="#D69E2E"></stop></lineargradient></defs>
+<line class="grid-line" x1="90" x2="1060" y1="350" y2="350"></line><line class="grid-line" x1="90" x2="1060" y1="270" y2="270"></line><line class="grid-line" x1="90" x2="1060" y1="190" y2="190"></line><line class="grid-line" x1="90" x2="1060" y1="110" y2="110"></line>
+<text class="axis-label" x="45" y="355">1.0</text><text class="axis-label" x="45" y="275">1.5</text><text class="axis-label" x="45" y="195">2.0</text><text class="axis-label" x="45" y="115">2.5</text>
+<path class="trend-line" d="M120,290 L302,260 L484,225 L666,180 L848,135 L1030,85"></path>
+<circle class="trend-dot" cx="120" cy="290" r="8"></circle><circle class="trend-dot" cx="302" cy="260" r="8"></circle><circle class="trend-dot" cx="484" cy="225" r="8"></circle><circle class="trend-dot" cx="666" cy="180" r="8"></circle><circle class="trend-dot" cx="848" cy="135" r="8"></circle><circle class="trend-dot" cx="1030" cy="85" r="9"></circle>
+<text class="data-label" x="98" y="270">1.20</text><text class="data-label" x="280" y="240">1.40</text><text class="data-label" x="462" y="205">1.65</text><text class="data-label" x="644" y="160">1.95</text><text class="data-label" x="826" y="115">2.30</text><text class="data-label" x="1005" y="65">2.70</text>
+<text class="axis-label" x="98" y="390">2023</text><text class="axis-label" x="280" y="390">2024</text><text class="axis-label" x="462" y="390">2025</text><text class="axis-label" x="644" y="390">2026E</text><text class="axis-label" x="826" y="390">2027E</text><text class="axis-label" x="1000" y="390">2028E</text>
+</svg>
+<div class="chart-source">数据来源：胡润研究院《2025中国高净值人群品质养老报告》、弗若斯特沙利文与文化旅游行业数据测算。</div>
+</div>
+<div class="grid g3" style="margin-top:30px">
+<div class="card white"><h3>健康需求居首</h3><p class="small" style="margin-top:15px">高净值人群消费心态转向隐性与实用，自身健康与情绪调节连续 4 年位列首要支出。</p></div>
+<div class="card white"><h3>高功能孤独</h3><p class="small" style="margin-top:15px">企业主与高管面临“存在性焦虑、情绪失语、假性社交”三大精神困境，急需同频场域。</p></div>
+<div class="card white"><h3>品质体验溢价</h3><p class="small" style="margin-top:15px">近六成高净值人群在旅行与身心修习中愿意为优质住宿、服务与深度导师体验付费。</p></div>
+</div>
+</div>
+</section>
+
+<section class="section light break" id="competition">
+<div class="container">
+<div class="section-head">
+<div class="section-index">02 / Southwest &amp; National Competition</div>
+<div><h2>西南大本营及重点城市竞品对比：突破传统模式的四大行业壁垒</h2><p class="section-intro">以重庆/成都为西南突破口，以上海/杭州为全国势能高地，针对同行短板建立标准化防御墙。</p></div>
+</div>
+<div class="matrix-wrap">
+<table class="matrix">
+<thead><tr><th>品牌/形态</th><th>定位与客群</th><th>典型价格带</th><th>核心优势</th><th>劣势与正念星图切入点</th></tr></thead>
+<tbody>
+<tr><td><b>传统心理咨询机构 A</b></td><td>临床心理关怀/重度患者</td><td>¥600-1500/小时</td><td>专业背书强，咨询师资质高</td><td>偏病理化，缺乏生活方式美感，高净值人群抗拒标签。<b>正念星图切入点：去病理化身心修习。</b></td></tr>
+<tr><td><b>瑜伽冥想生活馆 B</b></td><td>女性白领轻量解压</td><td>¥198-399/次；年卡万元</td><td>线下场馆设施完善</td><td>内容同质化严重（基础引导+伸展），缺乏深度觉察逻辑。<b>正念星图切入点：正念六维体系。</b></td></tr>
+<tr><td><b>声音疗愈/颂钵工作室 C</b></td><td>青年解压/玄学体验</td><td>¥299-599/场</td><td>体验感直观，体感放松明显</td><td>缺乏认知层面的觉察逻辑，难有长尾复购。<b>正念星图切入点：占星认知+正念体感闭环。</b></td></tr>
+<tr><td><b>身心灵工作坊 D</b></td><td>重度爱好者/个人成长</td><td>¥1980-4800/期</td><td>社群黏性高，客单价高</td><td>带有较浓玄学色彩，商业化不规范。<b>正念星图切入点：去玄学化、科学化表达框架。</b></td></tr>
+<tr><td><b>高端艺术会所沙龙 E</b></td><td>高净值女性/企业家夫人</td><td>会员制；单场 ¥500-1200</td><td>圈层极其高端，场域质感佳</td><td>内容多为外聘老师拼凑，无自研内容资产与线上转化。<b>正念星图切入点：独家自研双体系。</b></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section class="section break" id="demand">
+<div class="container">
+<div class="section-head">
+<div class="section-index">03 / Target Personas</div>
+<div><h2>目标客户分层画像：分级精准承接不同决策深度的修习需求</h2><p class="section-intro">金字塔客群结构保证低门槛引流与高客单利润品的有机结合。</p></div>
+</div>
+<div class="grid g3">
+<div class="persona">
+<h3>核心层（深度用户）</h3>
+<div class="meta">40-55岁企业主/投资人/高管 · 年收入200万+</div>
+<ul>
+<li>深度自我觉察、人生意义探索</li>
+<li>渴望高私密性、高端同频社交圈层</li>
+<li>沉浸式身心修复与精神重置</li>
+<li><b>对应产品：</b>王牌融合沙龙、高端旅修 Retreat、年度闭门峰会</li>
+</ul>
+</div>
+<div class="persona">
+<h3>主力层（高频用户）</h3>
+<div class="meta">30-45岁中高管/资深专业人士 · 年收入80-200万</div>
+<ul>
+<li>周末解压、情绪梳理与轻量修习</li>
+<li>兼具高品质社交与自我关照需求</li>
+<li>对高性价比的中端系统课决策迅速</li>
+<li><b>对应产品：</b>全品类线下沙龙、899元线上深度系统课</li>
+</ul>
+</div>
+<div class="persona">
+<h3>潜力层（引流用户）</h3>
+<div class="meta">25-35岁高认知白领/疗愈爱好者 · 年收入30-80万</div>
+<ul>
+<li>低门槛入门、认知提升、初步身心探索</li>
+<li>容易被社交媒体科普内容种草</li>
+<li><b>对应产品：</b>9.9元占星体验课、科普直播、基础独立沙龙</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section light break" id="opportunity">
+<div class="container">
+<div class="section-head">
+<div class="section-index">04 / Product Matrix</div>
+<div><h2>完整产品矩阵：形成“低价引流→正价盈利→高端溢价→持续复购”闭环</h2><p class="section-intro">线上虚拟产品、线下常态沙龙、高端旅修与场景带货四位一体。</p></div>
+</div>
+<div class="grid g4">
+<div class="card white">
+<h3>线上虚拟产品</h3>
+<p class="small muted" style="margin-top:10px">低门槛持续引流与高毛利</p>
+<ul class="small" style="margin-top:15px;padding-left:15px">
+<li><b>9.9元</b> 占星入门音频体验课（超级引流）</li>
+<li><b>899元</b> 正念六维觉察系统课（核心利润）</li>
+<li><b>899元</b> 占星深度觉察系统课（核心利润）</li>
+<li><b>1280元</b> Future年度闭门峰会（限300人）</li>
+</ul>
+</div>
+<div class="card white">
+<h3>线下常态沙龙</h3>
+<p class="small muted" style="margin-top:10px">日常现金流与口碑沉淀（周/月更）</p>
+<ul class="small" style="margin-top:15px;padding-left:15px">
+<li><b>399-699元</b> 正念独立沙龙（2小时）</li>
+<li><b>399-699元</b> 占星独立沙龙（2小时）</li>
+<li><b>999-1699元</b> 正念星图融合王牌（3-4小时）</li>
+<li><b>499-899元</b> 正念/占星+外部疗愈融合</li>
+</ul>
+</div>
+<div class="card black">
+<h3>高端旅修 Retreat</h3>
+<p class="small muted" style="margin-top:10px;color:#aaa">高毛利与品牌产值天花板（季更）</p>
+<ul class="small" style="margin-top:15px;padding-left:15px;color:#eee">
+<li><b>2980-5980元</b> 2天1夜 周末轻修版（8-15人）</li>
+<li><b>5980-12800元</b> 3天2夜 深度静修版（10-20人）</li>
+<li>选址高端康养酒店与自然氧吧度假村</li>
+<li>含一对一星图解读与深度正念静修</li>
+</ul>
+</div>
+<div class="card white">
+<h3>健康衍生分销</h3>
+<p class="small muted" style="margin-top:10px">零成本被动收益与场景化带货</p>
+<ul class="small" style="margin-top:15px;padding-left:15px">
+<li>助眠精油、天然养生茶饮</li>
+<li>身心滋养香氛、高端冥想坐垫</li>
+<li>线下沙龙自然体验 + 线上直播种草</li>
+<li>零库存、零压款纯佣金分成模式</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section black break" id="action">
+<div class="container">
+<div class="section-head">
+<div class="section-index">05 / Operations &amp; Partnerships</div>
+<div><h2>线上运营体系与三大轻资产对外合作策略</h2><p class="section-intro">精准流量捕获、强控制 SOP 交付与合作方防飞单机制。</p></div>
+</div>
+<div class="playbook">
+<div class="play em"><div class="play-no">01 / Live Stream</div><h3>直播矩阵结构</h3><p>每周1场90分钟科普直播（主挂9.9元课）；每月1-2场专场变现直播（全品类挂车）。</p></div>
+<div class="play"><div class="play-no">02 / Private Traffic</div><h3>私域转化路径</h3><p>公域（小红书/视频号）→ 3天轻量体验营/社群 → 9.9元体验课 → 899元正价课/沙龙 → 旅修。</p></div>
+<div class="play"><div class="play-no">03 / Venue</div><h3>场地方合作</h3><p>茶馆/书店/会所/民宿合作：场方出空间+会员，我方出内容+交付，收益分成，零固定租金。</p></div>
+<div class="play"><div class="play-no">04 / Therapists</div><h3>疗愈师矩阵</h3><p>嵌入音疗/舞动/芳香师。我方负责前15分钟开场与后30分钟收尾整合，强掌控品牌与客户。</p></div>
+<div class="play"><div class="play-no">05 / Compliance</div><h3>合规防飞单</h3><p>签署正式协议，客户权属统一归平台管理，通过线上课/旅修带货高额返佣长尾锁定合作方。</p></div>
+</div>
+</div>
+</section>
+
+<section class="section dark" style="padding-top:90px;padding-bottom:90px;">
+<div class="container">
+<div class="eyebrow white">FINANCIAL MODEL &amp; INVESTMENT CASE</div>
+<h2 class="white">以下把商业模式转化为首年投入、收入测算与分阶段 Go/No-Go 决策机制</h2>
+<p class="body2" style="color:#d1d1d1;margin-top:24px;max-width:980px;">首年预估投入 130万-250万元，预估总营收 156万-358万元。采用分阶段止损与放量策略，确保资金安全性。</p>
+</div>
+</section>
+
+<div class="pl-module" id="commercial-plan">
+<section class="pl-hero">
+<div class="pl-hero-inner">
+<div>
+<div class="pl-eyebrow">FINANCIALS &amp; FUNDING · YEAR 1 PLAN</div>
+<h1>正念星图<br/>首年财务模型与融资计划</h1>
+<p class="pl-hero-sub">本轮计划融资 50万-150万元，释放 10%-25% 股权（对应投前估值 300万-1500万元），资金分阶段投入与动态管控。</p>
+<div class="pl-hero-meta">
+<span><b>资金用途：</b>30% 团队 / 25% 营销 / 25% 研发 / 20% 运营储备</span>
+<span><b>核心回报周期：</b>12 - 18 个月</span>
+</div>
+</div>
+<aside class="pl-hero-card">
+<div>
+<div class="pl-label">REVENUE PROJECTION</div>
+<h3>首年营收目标</h3>
+<div class="pl-big-money">¥156万–358万</div>
+<p>常态化线下沙龙 + 线上利润课 + 高端旅修三引擎驱动增长。</p>
+</div>
+<div class="pl-split-row">
+<span>核心毛利率：<b>65%—75%</b></span>
+<span>盈亏平衡点：<b>Phase 2 末期</b></span>
+</div>
+</aside>
+</div>
+</section>
+
+<section class="pl-section" id="pl-thesis">
+<div class="pl-section-head">
+<div class="pl-section-index">01 / INVESTMENT THESIS</div>
+<div class="pl-section-title">
+<h2>分阶段动态投入：以量化指标决定放量或止损</h2>
+<p>资金非一次性烧完，每一阶段设置明确的 Go/No-Go 商业验证红线。</p>
+</div>
+</div>
+<div class="pl-kpis">
+<div class="pl-kpi"><div class="pl-num">¥130万-250万</div><div class="pl-cap">首年总预算区间<br/>根据验证数据动态调控</div></div>
+<div class="pl-kpi"><div class="pl-num">NPS ≥ 40</div><div class="pl-cap">Phase 1 体验场通过门槛<br/>直播场观 ≥ 500</div></div>
+<div class="pl-kpi"><div class="pl-num">满座率 ≥ 60%</div><div class="pl-cap">Phase 2 放量门槛<br/>线上课转化率 ≥ 5%</div></div>
+<div class="pl-kpi"><div class="pl-num">12-18个月</div><div class="pl-cap">投资人核心预计回本周期<br/>第二年起实现正向分红</div></div>
+</div>
+</section>
+
+<section class="pl-section pl-alt">
+<div class="pl-inner">
+<div class="pl-section-head">
+<div class="pl-section-index">02 / ASSUMPTION LAB</div>
+<div class="pl-section-title">
+<h2>参数模拟器（试算）</h2>
+<p>实时调整投入与营收，查看项目首年净贡献测算（单位：万元人民币）。</p>
+</div>
+</div>
+<div class="pl-simulator">
+<div class="pl-sim-copy">
+<h3>基础场景假设</h3>
+<p>Phase 1 验证期（15-30万）；Phase 2 打磨期（30-60万）；Phase 3 放量期（50-100万）。通过轻资产裂变降低固定踩坑成本。</p>
+<div class="pl-assumption-note">注：测算不包含所得税与融资筹资成本，实际以正式审计财务报表为准。</div>
+</div>
+<div>
+<div class="pl-input-grid">
+<div class="pl-field"><label>首年预估投入（万元）</label><input id="pl-y1i" min="50" step="10" type="number" value="190"/></div>
+<div class="pl-field"><label>首年预估营收（万元）</label><input id="pl-y1r" min="50" step="10" type="number" value="250"/></div>
+<div class="pl-field"><label>次年预期投入（万元）</label><input id="pl-y2i" min="100" step="50" type="number" value="400"/></div>
+<div class="pl-field"><label>次年预期营收（万元）</label><input id="pl-y2r" min="200" step="100" type="number" value="850"/></div>
+</div>
+<div class="pl-sim-output">
+<div><span>首年 ROI 杠杆</span><b id="pl-o1">1.32×</b></div>
+<div><span>次年 ROI 杠杆</span><b id="pl-o2">2.13×</b></div>
+<div><span>次年预估净利润</span><b id="pl-o3">450 万</b></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="pl-section" id="pl-ladder">
+<div class="pl-section-head">
+<div class="pl-section-index">03 / STAGE LADDER</div>
+<div class="pl-section-title">
+<h2>三阶段推进路线与决策节点</h2>
+</div>
+</div>
+<div class="pl-ladder">
+<article class="pl-step pl-s0">
+<div>
+<div class="pl-tag">PHASE 1 · VERIFY</div>
+<h3>0-3个月：链路验证</h3>
+<div class="pl-money">¥15-30万</div>
+<div class="pl-ratio">验证 PMF 与种子流量</div>
+<ul>
+<li>5套沙龙 SOP 定稿及 MVP 体验场落地</li>
+<li>直播间搭建与每周固定科普档</li>
+<li>小红书矩阵起号，接洽首批疗愈师</li>
+</ul>
+</div>
+<div class="pl-gate"><b>Go 门槛：</b>体验场 NPS ≥ 40，直播场观 ≥ 500，私域新增 ≥ 200人</div>
+</article>
+<article class="pl-step pl-s1">
+<div>
+<div class="pl-tag">PHASE 2 · POLISH</div>
+<h3>3-6个月：模型打磨</h3>
+<div class="pl-money">¥30-60万</div>
+<div class="pl-ratio">打造稳定转化盈利单元</div>
+<ul>
+<li>上线全部线上课程（899元）</li>
+<li>月度专场带货直播（转化全线产品）</li>
+<li>签约 2-3 家长期高端合作场地</li>
+</ul>
+</div>
+<div class="pl-gate"><b>Go 门槛：</b>沙龙满座率 ≥ 60%，线上课转化率 ≥ 5%，私域社群 ≥ 500人</div>
+</article>
+<article class="pl-step pl-s2">
+<div>
+<div class="pl-tag">PHASE 3 · SCALE</div>
+<h3>6-12个月：规模复制</h3>
+<div class="pl-money">¥50-100万</div>
+<div class="pl-ratio">放量扩张与顶层产品落地</div>
+<ul>
+<li>沙龙扩至月均 8-12 场（扩展至2-3城）</li>
+<li>落地首期高端旅修 Retreat</li>
+<li>筹备并预售 Future 年度闭门峰会</li>
+</ul>
+</div>
+<div class="pl-gate"><b>阶段成果：</b>沉淀 100+ 深度高净值种子用户，跑通高毛利闭环</div>
+</article>
+<div class="pl-barline"></div>
+</div>
+</section>
+
+<section class="pl-section pl-alt">
+<div class="pl-inner">
+<div class="pl-section-head">
+<div class="pl-section-index">04 / TEAM &amp; BACKING</div>
+<div class="pl-section-title">
+<h2>核心团队与履历背书</h2>
+<p>自研核心内容 + 资深运营操盘手（本轮重点引进） + 外部专业师资矩阵。</p>
+</div>
+</div>
+<div class="pl-why-grid">
+<article class="pl-why">
+<div class="pl-n">郑静</div>
+<h3>创始人 / 核心正念负责人</h3>
+<p>自研“正念六维觉察体系”创始人，8年+ 正念冥想教学经验，服务高净值学员 1000+ 人，线下沙龙交付 200+ 场，全网粉丝 15万+。负责正念产品研发与品牌内核把控。</p>
+</article>
+<article class="pl-why">
+<div class="pl-n">张鑫</div>
+<h3>联合创始人 / 占星负责人</h3>
+<p>资深专业占星师，从业 6年+，累计 3000+ 小时一对一深度咨询，主打“去玄学、重实用”觉察模式。独家研发正念与占星融合产品，负责占星全品类交付。</p>
+</article>
+<article class="pl-why">
+<div class="pl-n">操盘手</div>
+<h3>运营负责人（本轮重点引进）</h3>
+<p>本轮融资 30% 预算专项用于引进资深流量与私域操盘手（5年+ MCN/知识付费/高净值私域背景），统筹直播投流、私域裂变与对外合作。</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="pl-section" id="pl-year1">
+<div class="pl-section-head">
+<div class="pl-section-index">05 / YEAR 1 BUDGET &amp; REVENUE</div>
+<div class="pl-section-title">
+<h2>首年投入与收入构成拆解</h2>
+</div>
+</div>
+<div class="pl-finance-grid">
+<article class="pl-finance-card">
+<h3>首年投入结构（共计 130万-250万元）</h3>
+<div class="pl-legend">
+<div><span>团队人力运营（主理人+操盘手）</span><b>30-50 万元</b></div>
+<div><span>营销获客与小红书投放</span><b>20-40 万元</b></div>
+<div><span>线下沙龙/场地保证金/物料</span><b>15-30 万元</b></div>
+<div><span>旅修&amp;年度峰会筹备</span><b>30-60 万元</b></div>
+<div><span>产品开发与课程录制</span><b>10-20 万元</b></div>
+<div><span>直播设备与线上内容制作</span><b>15-30 万元</b></div>
+<div><span>合作疗愈师分成</span><b>10-20 万元</b></div>
+</div>
+</article>
+<article class="pl-finance-card">
+<h3>首年收入来源预估（共计 156万-358万元）</h3>
+<div class="pl-revenue-bridge">
+<div class="pl-bridge-row"><span>高端旅修项目</span><div class="pl-bridge-track"><div class="pl-bridge-fill" style="width:45%"></div></div><b>50-150 万元</b></div>
+<div class="pl-bridge-row"><span>899元线上课程</span><div class="pl-bridge-track"><div class="pl-bridge-fill" style="width:30%"></div></div><b>36-90 万元</b></div>
+<div class="pl-bridge-row"><span>常态线下沙龙</span><div class="pl-bridge-track"><div class="pl-bridge-fill" style="width:20%"></div></div><b>20-50 万元</b></div>
+<div class="pl-bridge-row"><span>1280元闭门峰会</span><div class="pl-bridge-track"><div class="pl-bridge-fill" style="width:15%"></div></div><b>38.4 万元</b></div>
+<div class="pl-bridge-row"><span>分销与合作分成</span><div class="pl-bridge-track"><div class="pl-bridge-fill" style="width:10%"></div></div><b>12-30 万元</b></div>
+</div>
+</article>
+</div>
+</section>
+
+<section class="pl-section pl-alt">
+<div class="pl-inner">
+<div class="pl-section-head">
+<div class="pl-section-index">06 / 30-60-90 DAYS PLAN</div>
+<div class="pl-section-title">
+<h2>行动建议：30 / 60 / 90 天落地路线图</h2>
+</div>
+</div>
+<div class="pl-quarters">
+<article class="pl-quarter">
+<div class="pl-q">30天</div>
+<h3>MVP链路验证</h3>
+<p>定稿 5 套沙龙 SOP 与合规话术库；签约第1家标杆会所；落地首场 MVP 沙龙；启动 weekly 直播与小红书矩阵。</p>
+<div class="pl-metric">预算：<b>6-12 万元</b></div>
+</article>
+<article class="pl-quarter">
+<div class="pl-q">60天</div>
+<h3>内容打磨与启动</h3>
+<p>签约 2-3 位常驻疗愈师与长期合作场地；上线全线线上课程；开展首场专场带货直播。</p>
+<div class="pl-metric">预算：<b>5-10 万元</b></div>
+</article>
+<article class="pl-quarter">
+<div class="pl-q">90天</div>
+<h3>放量与旅修预售</h3>
+<p>沙龙扩展至月均 8 场（多城落地）；启动首期高端旅修策划预售；疗愈师矩阵扩至 5-8 人。</p>
+<div class="pl-metric">预算：<b>11-23 万元</b></div>
+</article>
+<article class="pl-quarter">
+<div class="pl-q">成果</div>
+<h3>90天关键里程碑</h3>
+<p>验证 PMF，沉淀 100+ 深度高净值种子用户，建成稳固的“内容-直播-私域-线下-高端”商业闭环。</p>
+<div class="pl-metric">累计投入：<b>22-45 万元</b></div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="pl-section pl-dark" id="pl-guardrails">
+<div class="pl-inner">
+<div class="pl-section-head">
+<div class="pl-section-index">07 / RISK MANAGEMENT</div>
+<div class="pl-section-title">
+<h2>关键风险与专属应对策略</h2>
+</div>
+</div>
+<div class="pl-risk-grid">
+<article class="pl-risk"><div class="pl-r">01</div><div><h3>合规与舆论风控</h3><p>建立规范合规话术库：占星公域严格定位为“个人原型与心理镜像觉察工具”，坚决去玄学化、去宿命论；标注不替代医疗。</p></div></article>
+<article class="pl-risk"><div class="pl-r">02</div><div><h3>疗愈师私拓/飞单</h3><p>坚持“强控制开收尾”（我方把控前15min与后30min）；签署严格客户归属协议；通过线上课与旅修分红共享长期收益。</p></div></article>
+<article class="pl-risk"><div class="pl-r">03</div><div><h3>获客成本偏离</h3><p>放弃泛流量硬广投放，专注小红书与视频号精细化内容输出，以 9.9 元极低门槛课精准筛选高净值人群。</p></div></article>
+<article class="pl-risk"><div class="pl-r">04</div><div><h3>交付质量波动</h3><p>制定统一标准化 SOP 流程、试讲考核机制及用户 NPS 淘汰机制（连续 2 场 NPS &lt; 30 即终止合作）。</p></div></article>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="pl-decision">
+<div>
+<span class="pl-pill">INVESTMENT SUMMARY</span>
+<h2 style="margin-top:20px">融资金额 50万-150万元，分阶段释放股权</h2>
+<p>以低门槛高频沙龙切入，高客单旅修与线上课程获取利润，诚邀财务投资人、空间场地方及战略资源合作方共同打造中国高端身心修习生活平台。</p>
+</div>
+<div class="pl-decision-box">
+<div><span>本轮融资金额</span><b>50万–150 万元</b></div>
+<div><span>释放股权比例</span><b>10%–25%</b></div>
+<div><span>首年目标营收</span><b>156万–358 万元</b></div>
+<div><span>预计投资回本期</span><b>12–18 个月</b></div>
+</div>
+</div>
+</section>
+
+<footer>
+<b>商业计划书说明：</b>本方案数据均基于行业权威报告（胡润报告、弗若斯特沙利文等）与市场真实测算，实际执行将根据发展节奏与市场反馈动态调整。
+</footer>
+</div>
+
+<section class="section break" id="method">
+<div class="container">
+<div class="section-head">
+<div class="section-index">06 / Methodology</div>
+<div><h2>方法论与数据来源说明</h2><p class="section-intro">结合宏观行业报告、消费者调研与真实市场对标测算。</p></div>
+</div>
+<div class="method">
+<div class="method-card"><h3>市场权威数据</h3><p>《胡润中国高净值人群消费心态及行为研究报告2025》、《2025中国高净值人群品质养老报告》。</p></div>
+<div class="method-card"><h3>行业大盘测算</h3><p>弗若斯特沙利文泛心理健康白皮书、中国高端银发/康养文旅行业公开数据。</p></div>
+<div class="method-card"><h3>竞品实地调研</h3><p>西南（重庆/成都）及华东（上海/杭州）线下沙龙、冥想馆、疗愈工作室价格与交付形式测算。</p></div>
+<div class="method-card"><h3>用户痛点归纳</h3><p>高净值人群深度访谈与小红书/社群用户痛点反馈汇总。</p></div>
+</div>
+</div>
+</section>
+
+<section class="section light break">
+<div class="container">
+<div class="section-head">
+<div class="section-index">07 / Selected Sources</div>
+<div><h2>主要参考资料与数据源</h2></div>
+</div>
+<div class="sources">
+<div class="source"><b>胡润研究院</b><span>《高净值人群消费心态及行为研究报告 2025》；《中国高净值人群品质养老报告 2025》</span></div>
+<div class="source"><b>弗若斯特沙利文 (Frost &amp; Sullivan)</b><span>中国泛心理健康服务行业市场发展报告</span></div>
+<div class="source"><b>文化与旅游部 / 行业数据</b><span>全国文旅与高端银发康养旅修市场统计报告</span></div>
+<div class="source"><b>市场竞品对标</b><span>市面线下正念沙龙、占星咨询、音疗工作坊及线上冥想 App 定价体系</span></div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<h2>正念星图 · 面向高净值人群的高端身心修习生活平台</h2>
+<p class="body2">正念六维觉察体系 + 占星觉察 + 疗愈师矩阵 + 线上虚拟产品 + 旅修延伸</p>
+<div class="footer-meta"><span>正念星图项目组</span><span>商业计划书（完整版） · 2026年7月</span><span>正念六维 · 探索内在笃定</span></div>
+</div>
+</footer>
+
+<script>
+(function(){
+  const p=document.getElementById('progress');
+  function update(){const h=document.documentElement.scrollHeight-window.innerHeight;const y=window.scrollY||document.documentElement.scrollTop;p.style.width=(h>0?y/h*100:0)+'%'}
+  window.addEventListener('scroll',update,{passive:true});update();
+  const inputs = ['pl-y1i','pl-y1r','pl-y2i','pl-y2r'].map(id => document.getElementById(id));
+  const fmt = n => Number(n).toLocaleString('zh-CN', {maximumFractionDigits:0});
+  function updateModel(){
+    const y1i = +document.getElementById('pl-y1i').value || 0;
+    const y1r = +document.getElementById('pl-y1r').value || 0;
+    const y2i = +document.getElementById('pl-y2i').value || 0;
+    const y2r = +document.getElementById('pl-y2r').value || 0;
+    document.getElementById('pl-o1').textContent = y1i ? (y1r/y1i).toFixed(2)+'×' : '—';
+    document.getElementById('pl-o2').textContent = y2i ? (y2r/y2i).toFixed(2)+'×' : '—';
+    document.getElementById('pl-o3').textContent = fmt(y2r-y2i)+' 万';
+  }
+  inputs.forEach(i => i.addEventListener('input', updateModel));
+  updateModel();
+})();
+</script>
+</body>
+</html>
